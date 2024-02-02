@@ -1,0 +1,26 @@
+Program monprojet 
+PDEC 
+x | a | b : Pint; 
+ y : Pfloat;
+@define Pfloat ff <-- 7.8;
+PINST 
+Begin 
+a <-- 0;
+b <-- 2;
+End 
+
+
+commentaires
+div par 0              x <-- 5 / 0;  x <-- 5 / a;   x <-- b / a;        
+
+non declaration        i <-- 3; FOR i <-- 1 WHILE 4   
+                                 DO
+                                 a <-- 3;
+                                 ENDFOR
+                                 End  
+   
+modif cst              ff <-- 0.5;   ff <-- a;
+
+double declaration     a : Pfloat;   a : Pint;
+
+imcompatible type      x <-- 4.1;    x <-- y; 
